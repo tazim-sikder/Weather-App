@@ -26,6 +26,14 @@ body{
         height: auto;
     }
   }
+  @media (max-width: 767px) {
+    #myVideo {
+        display: none;
+    }
+    body {
+        background-image: url("picture.png");
+    }
+  }
 .tabs {
     color: white;
     display: flex;

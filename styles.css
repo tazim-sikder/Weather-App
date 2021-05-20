@@ -32,6 +32,8 @@ body{
     }
     body {
         background-image: url("picture.png");
+        background-size: cover;
+        
     }
   }
 .tabs {

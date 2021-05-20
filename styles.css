@@ -12,8 +12,19 @@ body{
 }
 #myVideo {
     position:fixed;
-    width: 100%; 
-    min-height: 100%;
+    
+  }
+  @media (min-aspect-ratio: 16/19) {
+    #myVideo {
+        width: 100%; 
+        height: auto;
+    }
+  }
+  @media (max-aspect-ratio: 16/19) {
+    #myVideo {
+        width: 100%; 
+        height: auto;
+    }
   }
 .tabs {
     color: white;
@@ -40,9 +51,10 @@ body{
     color: black;
 }
 #lab {
-    position: absolute;
-    top: 10px;
-    left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: left;;
+    
     
 }
 #surround {

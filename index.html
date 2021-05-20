@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href = "styles.css" rel = "stylesheet">
-    
+    <script src="https://kit.fontawesome.com/a92e977bb2.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <script src = "script.js" defer></script>
     <title>Weather App </title>
 </head>
 <body>
     <ul class = "tabs">
-        <li data-tab-target = "#home" class = "active tab">Home</li>
-        <li data-tab-target = "#weather" class = "tab">Weather</li>
+        <label id = "lab"> Ultimate Weather App </label>
+        <li data-tab-target = "#home" class = "active tab"><i class="fas fa-home"></i>Home</li>
+        <li data-tab-target = "#weather" class = "tab"><i class="fas fa-sun"></i>Weather</li>
     </ul>
 
     <video autoplay muted loop id = "myVideo">
@@ -45,12 +47,14 @@
                 </svg></button>
               </div>  
             <div id = "Wtext">
-                <h2 id = "city">d </h2>
-                <h1 id = "temp">dd</h1>
+                <h2 class = "city"> </h2>
+                <h1 class = "temp"> </h1>
+                <div class = "flex">
                 <img src = "" alt = "" class = "icon"/>
-                <div class = "description">s</div>   
-                <div class = "humidity">g</div>
-                <div class = "wind">e</div>
+                <div class = "description"> </div>  
+                </div> 
+                <div class = "humidity"> </div>
+                <div class = "wind"> </div>
             </div>    
             </div>
         </div>

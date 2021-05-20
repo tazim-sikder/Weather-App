@@ -1,6 +1,9 @@
 [data-tab-content] {
     display: none;
 }
+.active[data-tab-content] {
+    display: block;
+}
 body{
     padding: 0;
     margin: 0;
@@ -9,20 +12,16 @@ body{
 }
 #myVideo {
     position:fixed;
-    min-width: 100%; 
+    width: 100%; 
     min-height: 100%;
   }
-.active[data-tab-content] {
-    display: block;
-}
 .tabs {
     color: white;
     display: flex;
-    justify-content: space-around;
+    justify-content:flex-end;
     list-style-type: none;
     font-size: 25px;
-    border-bottom: 1px solid black;
-    background-color: rgb(102, 102, 102);
+    background-color: rgb(54, 54, 54);
     margin: 0;
     padding: 0;
 }
@@ -37,12 +36,19 @@ body{
     background-color:rgb(58, 57, 57);
 }
 .tab.active {
-    background-color: rgb(65, 65, 65);
+    background-color: rgb(219, 219, 219);
+    color: black;
+}
+#lab {
+    position: absolute;
+    top: 10px;
+    left: 50px;
+    
 }
 #surround {
     position: absolute;
     background-color: white;
-    height: 350px;
+    height: 300px;
     width: 350px;
     border-radius: 30px;
     top: 55%;
@@ -72,11 +78,9 @@ body{
     transform: translate(-50%, -50%);
 }
 
-
-
 #search-bar {
     position: absolute;
-    top: 7%;
+    top: 13%;
     left: 45%;
     transform: translate(-50%, -50%);
     border: none;
@@ -88,7 +92,7 @@ body{
 }
 #search-btn {
     position: absolute;
-    top: 7%;
+    top: 13%;
     left: 68%;
     transform: translate(-50%, -50%);
     border-radius: 50%;
@@ -102,16 +106,31 @@ body{
 }
 #search-btn:hover {
     background: grey;
-    transition: .2s ease-in-out;
+    transition: .3s ease-in-out;
 }
 #search-btn:active {
     background: black;
 }
 #search-bar:focus {
     border-radius: 2px;
+    transition: .4s;
+    outline: none;
 }
-
-
+.description {
+    text-transform: capitalize;
+    margin-left: 8px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+}
+#Wtext {
+    font-size: 19px;
+    line-height: 30px;
+}
+.city {
+    white-space: nowrap;
+}
 
 
 
